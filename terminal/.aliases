@@ -1,0 +1,16 @@
+#alias file 
+
+
+alias s='src'
+alias cls='clear'
+alias please='sudo'
+alias fucking='sudo'
+alias _='sudo'
+alias install='please pacman -S'
+alias remove='please pacman -R'
+alias deeptest='please pacman -T'
+alias upgrade='please pacman -U'
+alias fullupgrade='please pacman -Syu'
+alias refresh='please pacman -Sy'
+alias clean='please pacman -Sc'
+alias bye='clear | exit'
