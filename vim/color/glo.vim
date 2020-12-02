@@ -44,12 +44,12 @@ hi WarningMsg ctermfg=DarkRed	   guifg=Red
 hi WildMenu   ctermfg=Black	   ctermbg=Yellow    guibg=Yellow guifg=Black
 
 " syntax highlighting
-hi Comment    cterm=NONE ctermfg=DarkRed     gui=NONE guifg=red2
-hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
-hi Identifier cterm=NONE ctermfg=DarkCyan    gui=NONE guifg=cyan4
-hi PreProc    cterm=NONE ctermfg=DarkMagenta gui=NONE guifg=magenta3
-hi Special    cterm=NONE ctermfg=LightRed    gui=NONE guifg=deeppink
-hi Statement  cterm=bold ctermfg=Blue	     gui=bold guifg=blue
-hi Type	      cterm=NONE ctermfg=Blue	     gui=bold guifg=blue
+hi Comment    cterm=NONE ctermfg=LightGray   gui=NONE guifg=gray
+hi Constant   cterm=NONE ctermfg=Red         gui=NONE guifg=red2
+hi Identifier cterm=NONE ctermfg=Blue        gui=NONE guifg=blue4
+hi PreProc    cterm=NONE ctermfg=Cyan        gui=NONE guifg=cyan3
+hi Special    cterm=NONE ctermfg=Magenta    gui=NONE guifg=deeppink
+hi Statement  cterm=bold ctermfg=Yellow	     gui=bold guifg=yellow
+hi Type	      cterm=NONE ctermfg=LightCyan	 gui=bold guifg=cyan
 
 " vim: sw=2
