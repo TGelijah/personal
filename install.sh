@@ -1,8 +1,10 @@
 mkdir ~/.vim
-mkdir ~/.vim/color
+mkdir ~/.vim/colors
 
-cp vim/color ~/.vim/color
+cp -r vim/color/tool ~/.vim/colors
+cp vim/color/glo.vim ~/.vim/colors
 cp vim/.vimrc ~/
+
 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
