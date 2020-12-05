@@ -18,3 +18,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 #nvm for zsh use
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
 
+#git configuration
+cp git/.gitmessage.txt ~
+git config --global user.name Glorious Elijah
+git config --global user.email gloriouselijah125@gmail.com
+git config --global commit.template ~/.gitmessage.txt
+git config --global core.editor vim
