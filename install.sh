@@ -1,4 +1,4 @@
-sudo pacman -Syu arduino openvpn pulseaudio-bluetooth alsa-plugins pulseaudio pulseaudio-alsa pavucontrol ponymix bluez bluez-utils calibre arduino-builder arduino-ctags atom audacious audacious-plugins audacity texinfo texlive-bibtexextra texlive-bin texlive-core texlive-fontsextra texlive-formatsextra texlive-games texlive-humanities texlive-latexextra texlive-music texlive-pictures texlive-pstricks texlive-publishers texlive-science texmaker texstudio telegram-desktop firefox-developer-edition geany gimp inkscape jre-openjdk jre-openjdk-headless lyx vim vim-runtime vlc blender pencil2d chromium code 
+sudo pacman -Syu arduino openvpn pulseaudio-bluetooth pulseaudio bluez bluez-utils calibre arduino-builder arduino-ctags atom audacious audacious-plugins audacity texinfo texlive-bibtexextra texlive-bin texlive-core texlive-fontsextra texlive-formatsextra texlive-games texlive-humanities texlive-latexextra texlive-music texlive-pictures texlive-pstricks texlive-publishers texlive-science texmaker texstudio telegram-desktop firefox-developer-edition geany gimp inkscape jre-openjdk jre-openjdk-headless lyx vim vim-runtime vlc blender pencil2d chromium code vokoscreen peek simplescreenrecorder obs-studio mpd libreoffice cantata 
 
 mkdir ~/.vim
 mkdir ~/.vim/colors
@@ -18,9 +18,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 #nvm for zsh use
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
-
-#bluetooth pulseaudio configuration
-sudo cp pulse/Client.conf /etc/pulse/
 
 #git configuration
 cp git/.gitmessage.txt ~
