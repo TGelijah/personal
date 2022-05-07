@@ -1,7 +1,7 @@
-#alias file 
+#alias file
 
 
-alias s='src'
+alias s='source ~/.bashrc && source ~/.zshrc'
 alias cls='clear'
 alias please='sudo'
 alias fucking='sudo'
