@@ -4,6 +4,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Export LC_all and LANG environment variables
+export LANGUAGE=en_US.utf-8
+export LC_ALL=en_US.utf-8
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -11,6 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # other theme I might use includes agnoster
 # ZSH_THEME="af-magic"
 # ZSH_THEME="arrow"
+# ZSH_THEME="robbyrussell"
   ZSH_THEME="glo"
 
 # Set list of themes to pick from when loading at random
@@ -33,7 +38,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "glo" "af-magic" "arrow")
  DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
- export UPDATE_ZSH_DAYS=5
+ export UPDATE_ZSH_DAYS=1
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -71,7 +76,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "glo" "af-magic" "arrow")
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z git sudo node npm archlinux zsh_reload)
+plugins=(z git sudo node npm)
 
 source $ZSH/oh-my-zsh.sh
 
