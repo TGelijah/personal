@@ -45,9 +45,22 @@ echo '***      IDEs, Browsers, Windows compatitble archiver and unarchiver, tele
 echo '***      media players, aur helper, etc. are about to be installed.               ***'
 echo '***                                                                               ***'
 echo '*************************************************************************************'
+echo
+'*************************************************************************************'
+echo '   Entering Vim runtime environment to edit pacman.conf as sudo uncomment Multilib   '
 echo '*************************************************************************************'
 echo
-sudo pacman -Syu openvpn unrar unzip zip calibre atom audacious telegram-desktop firefox-developer-edition geany gimp jre-openjdk vim vlc pencil2d chromium code thunderbird simplescreenrecorder obs-studio libreoffice cantata yay 
+sudo vim /etc/pacman.conf
+echo
+echo '*************************************************************************************'
+echo '                            Exited vim runtime                                       '
+echo '*************************************************************************************'
+echo
+echo
+echo
+'*************************************************************************************'
+echo
+sudo pacman -Syu openvpn unrar unzip zip curl wget calibre atom audacious telegram-desktop firefox-developer-edition geany gimp jre-openjdk vim vlc pencil2d libsecp256k1 cmake extra-cmake-modules chromium thunderbird simplescreenrecorder obs-studio libreoffice cantata yay
 echo
 echo '*************************************************************************************'
 echo '                                   Intall Completed                                  '
@@ -63,8 +76,10 @@ echo '***                                                                       
 echo '*************************************************************************************'
 echo '*************************************************************************************'
 echo
-cp -rf vim/color/tools ~/.vim/colors
-cp vim/color/glo.vim ~/.vim/colors
+mkdir ~/.vim
+mkdir ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cp -r vim/color/ ~/.vim/colors
 cp vim/.vimrc ~/
 echo
 echo '*************************************************************************************'
@@ -75,21 +90,21 @@ echo '          from your home directory if that is the case                    
 echo '          Manually move the config files to the /usr/share/vim folder                '
 echo '                                                                                     '
 echo '                                                                                     '
-echo "             Next Phase (ohmyzsh and Terminal configuration) Loading...              "
+echo "             Next Phase (Antigen and Terminal configuration) Loading...              "
 echo '*************************************************************************************'
 echo
 echo
 echo '*************************************************************************************'
 echo '*************************************************************************************'
 echo '***                                                                               ***'
-echo "***        Retrieving Ohmyzsh Files for Install & Shell Configuration             ***"
+echo "***        Retrieving Antigen Files for Install & Shell Configuration             ***"
 echo '***                                                                               ***'
 echo '*************************************************************************************'
 echo '*************************************************************************************'
 echo
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-cp ohmyzsh/theme/glo.zsh-theme ~/.oh-my-zsh/themes
-cp ohmyzsh/.zshrc ~
+curl -L git.io/antigen > antigen.zsh
+cp zsh/theme/glo.zsh-theme ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes
+cp zsh/.zshrc ~
 cp terminal/.aliases  ~
 echo
 echo
@@ -148,18 +163,7 @@ echo '**************************************************************************
 echo '*************************************************************************************'
 echo
 echo
-echo '*************************************************************************************'
-echo '   Entering Vim runtime environment to edit pacman.conf as sudo uncomment Multilib   '
-echo '*************************************************************************************'
-echo
-sudo vim /etc/pacman.conf
-echo
-echo '*************************************************************************************'
-echo '                            Exited vim runtime                                       '
-echo '*************************************************************************************'
-echo
-echo
-echo '*************************************************************************************'
+echo  '*************************************************************************************'
 echo '                            Installing OnlyOffice                                    '
 echo '*************************************************************************************'
 echo
@@ -211,4 +215,13 @@ yay brave
 echo
 echo '*************************************************************************************'
 echo '                            Brave Installed                                          '
+echo '*************************************************************************************'
+echo
+echo
+echo '*************************************************************************************'
+echo '                            Installing VS-Code                                       '
+echo '*************************************************************************************'
+yay vs-code-bin
+echo '*************************************************************************************'
+echo '                            VS-Code Installed                                        '
 echo '*************************************************************************************'
