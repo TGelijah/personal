@@ -102,6 +102,7 @@ echo '***                                                                       
 echo '*************************************************************************************'
 echo '*************************************************************************************'
 echo
+chsh -s bin/zsh
 curl -L git.io/antigen > antigen.zsh
 cp zsh/theme/glo.zsh-theme ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes
 cp zsh/.zshrc ~
