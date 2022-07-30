@@ -60,7 +60,7 @@ echo
 echo
 '*************************************************************************************'
 echo
-sudo pacman -Syu openvpn unrar unzip zip curl wget calibre atom audacious telegram-desktop firefox-developer-edition geany gimp jre-openjdk vim vlc pencil2d libsecp256k1 cmake extra-cmake-modules chromium thunderbird simplescreenrecorder obs-studio libreoffice cantata yay
+sudo pacman -Syu openvpn unrar unzip zip curl wget calibre atom audacious telegram-desktop firefox-developer-edition geany gimp jre-openjdk vim vlc pencil2d libsecp256k1 cmake extra-cmake-modules chromium ttf-fira-code thunderbird simplescreenrecorder obs-studio libreoffice cantata yay
 echo
 echo '*************************************************************************************'
 echo '                                   Intall Completed                                  '
