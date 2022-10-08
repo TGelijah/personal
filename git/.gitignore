@@ -1,0 +1,7 @@
+*.mwf
+*.vscode
+*.nw
+*.directory
+*.env
+*/build
+*/dist
