@@ -60,7 +60,7 @@ echo
 echo
 '*************************************************************************************'
 echo
-sudo pacman -Syu openvpn unrar unzip zip curl wget calibre atom audacious telegram-desktop firefox-developer-edition geany gimp jre-openjdk vim mpv pencil2d libsecp256k1 cmake extra-cmake-modules chromium ttf-fira-code thunderbird simplescreenrecorder obs-studio libreoffice cantata yay
+sudo pacman -Syu openvpn unrar unzip zip curl wget calibre telegram-desktop gimp vim mpv chromium ttf-fira-code libreoffice cantata yay
 echo
 echo '*************************************************************************************'
 echo '                                   Intall Completed                                  '
@@ -143,6 +143,7 @@ cp git/.gitmessage.txt ~
 git config --global user.name Glorious Elijah
 git config --global user.email gloriouselijah125@gmail.com
 git config --global commit.template ~/.gitmessage.txt
+git config --global merge.rabase false
 git config --global core.editor vim
 echo
 echo '*************************************************************************************'
@@ -225,4 +226,31 @@ echo '**************************************************************************
 yay vs-code-bin
 echo '*************************************************************************************'
 echo '                            VS-Code Installed                                        '
+echo '*************************************************************************************'
+echo
+echo
+echo '*************************************************************************************'
+echo '                            Installing Vlc                                       '
+echo '*************************************************************************************'
+yay vlc
+echo '*************************************************************************************'
+echo '                            Vlc Installed                                        '
+echo '*************************************************************************************'
+echo
+echo
+echo '*************************************************************************************'
+echo '                            Installing Zeal                                       '
+echo '*************************************************************************************'
+yay zeal-git
+echo '*************************************************************************************'
+echo '                            Zeal Installed                                        '
+echo '*************************************************************************************'
+echo
+echo
+echo '*************************************************************************************'
+echo '                            Installing Insomnia                                       '
+echo '*************************************************************************************'
+yay insomnia
+echo '*************************************************************************************'
+echo '                            Insomnia Installed                                        '
 echo '*************************************************************************************'
