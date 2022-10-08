@@ -140,10 +140,12 @@ echo
 echo
 #git configuration
 cp git/.gitmessage.txt ~
+cp git/.gitignore ~
 git config --global user.name Glorious Elijah
 git config --global user.email gloriouselijah125@gmail.com
 git config --global commit.template ~/.gitmessage.txt
-git config --global merge.rabase false
+git config --global pull.rabase false
+git config --global core.excludesfile ~/.gitignore
 git config --global core.editor vim
 echo
 echo '*************************************************************************************'
